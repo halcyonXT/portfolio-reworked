@@ -1,0 +1,89 @@
+.-main {
+    --padding: 2.1%;
+    width: calc(100% - 6vw);
+    height: calc(100% - 9vh);
+    box-sizing: border-box;
+    border: 8px solid var(--bg);
+    background-color: var(--main);
+    position: absolute;
+    margin: 4.5vh 3vw;
+    padding: var(--padding);
+
+    .-main-controls {
+        position: absolute;
+        width: max-content;
+        font-weight: 700;
+        letter-spacing: -1px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    
+    .-main-logo {
+        font-size: 45px;
+        user-select: none;
+        -webkit-user-drag: none;
+        margin-bottom: 0px;
+        /*color: var(--bg)*/
+        background-clip: text;
+        color: var(--bg);
+        mix-blend-mode: darken;
+    }
+    
+    .-main-controls-button {
+        font-size: 16px;
+        color: var(--bg);
+        background: linear-gradient(to right, var(--bg) 48.9%, var(--main) 49%);
+        background-size: 200%;
+        background-position: 100%;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 0px;
+        padding: 0 3px 0 3px;
+        transition-duration: 0.2s;
+        width: max-content;
+        font-weight: 500;
+    }
+    
+    .-main-controls-button:hover {
+        background-position: 0%;
+        color: var(--main);
+    }
+    
+    .-main-display {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: var(--padding);
+        overflow: hidden;
+    }
+
+    .-main-display-y-fade {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: var(--padding);
+        background: radial-gradient(transparent 55%, var(--main) 93%, var(--main) 98%);
+        pointer-events: none;
+    }
+    
+    .-main-controls-buttons-wrapper {
+        gap: 8px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+

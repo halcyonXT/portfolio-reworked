@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;900&display=swap');
+
+body, html {
+  height: 100dvh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: none;
+}
+
+.-cursor {
+  height: 30px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  z-index: 9999;
+  background-position: contain;
+  background-image: url('/normal.png');
+  object-fit: contain;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  pointer-events: none;
+}
+
+:root {
+  --main: #d3bf0f;
+  --bg: #101820;
+}
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+#background {
+  height: 100dvh;
+  width: 100vw;
+}

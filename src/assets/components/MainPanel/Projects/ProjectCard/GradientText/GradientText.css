@@ -1,0 +1,18 @@
+.-text-gradient {
+    color: transparent;
+    background: var(--bg);
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    height: max-content;
+    width: max-content;
+    overflow: visible;
+}
+
+.-box-gradient {
+    color: transparent;
+    background: var(--bg);
+    height: max-content;
+    width: max-content;
+    overflow: visible;
+}
