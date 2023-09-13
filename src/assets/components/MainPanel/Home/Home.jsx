@@ -13,7 +13,7 @@ export default function Home(props) {
 
         let loadedModel;
         const stlLoader = new GLTFLoader();
-        stlLoader.load('./src/assets/images/modelnet9.gltf', (stlScene) => {
+        stlLoader.load('/modelnet9.gltf', (stlScene) => {
             loadedModel = stlScene;
             console.log(stlScene)
             test.scene.rotation.x = -0.3;
