@@ -31,7 +31,6 @@ export default function GradientText(props) {
         cursorAnimation.addNode(id);
     }, [])
 
-    console.log(className)
     return (
         <span className={className}  ref={textRef} style={props.xs} data-id={id}>
             {props.children}

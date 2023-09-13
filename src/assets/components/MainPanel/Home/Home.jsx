@@ -13,9 +13,8 @@ export default function Home(props) {
 
         let loadedModel;
         const stlLoader = new GLTFLoader();
-        stlLoader.load('/modelnet9.gltf', (stlScene) => {
+        stlLoader.load('/portfolio-reworked/modelnet9.gltf', (stlScene) => {
             loadedModel = stlScene;
-            console.log(stlScene)
             test.scene.rotation.x = -0.3;
             test.scene.rotation.z = -0.2;
             test.scene.scale.set(0.65,0.65,0.65)
